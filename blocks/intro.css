@@ -1,11 +1,11 @@
 .intro {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: flex-start;
   color: #FFFFFF;
   margin: 92px auto;
   max-width: 990px;
-
+  padding: 0 16px;
 }
 
 .intro__title {
@@ -13,9 +13,8 @@
   font-weight: 900;
   font-size: 54px;
   line-height: 58px;
-  letter-spacing: 0;
   max-width: 800px;
-
+  margin: 0 0 16px 0;
 }
 
 .intro__text {
@@ -23,9 +22,8 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
-  letter-spacing: 0;
   max-width: 700px;
-
+  margin: 0 0 8px 0;
 }
 
 .intro__text-autor {
@@ -33,63 +31,52 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
-  letter-spacing: 0;
   text-align: right;
   max-width: 700px;
-
-
+  margin: 0 0 24px 0;
 }
 
 .intro__paragraph {
   font-family: "Inter-Regular", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 163%;
-  letter-spacing: 0;
+  line-height: 1.63;
   max-width: 722px;
+  margin: 0;
 }
 
-@media screen AND (min-width:768px) AND (max-width:1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .intro__title {
     font-size: 45px;
     line-height: 49px;
   }
 
-  .intro__text {
-    font-size: 24px;
-    line-height: 34px;
-  }
-
+  .intro__text,
   .intro__text-autor {
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .intro__paragraph {
     font-size: 16px;
-    line-height: 163%;
+    line-height: 1.5;
   }
 }
 
-@media screen AND (min-width:320px) AND (max-width:544px) {
+@media screen and (max-width: 767px) {
   .intro__title {
     font-size: 32px;
-    line-height: 35px;
+    line-height: 36px;
   }
 
-  .intro__text {
-    font-size: 24px;
-    line-height: 30px;
-  }
-
+  .intro__text,
   .intro__text-autor {
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .intro__paragraph {
-    font-size: 16px;
-    line-height: 163%;
+    font-size: 14px;
+    line-height: 1.5;
   }
-
 }

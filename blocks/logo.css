@@ -1,5 +1,20 @@
 .logo {
   display: block;
+  max-width: 100%;
+  height: auto;
   padding: 34px 0 92px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    padding: 24px 0 64px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .logo {
+    padding: 16px 0 48px;
+    max-width: 240px;
+  }
 }
