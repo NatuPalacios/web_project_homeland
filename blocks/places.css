@@ -1,19 +1,18 @@
 .places {
-  max-width: 1280px;
-  margin: 0 auto 76px;
-  padding: 0 16px;
-  display: grid;
+  max-width: 990px;
+  display: flex;
+  flex-direction: column;
   gap: 80px;
+  margin: 0 auto 76px;
 }
 
 .places__content {
+  max-width: 984px;
   display: grid;
   grid-template-columns: 460px 1fr;
-  gap: 40px;
+  grid-template-rows: auto auto 1fr;
+  grid-gap: 48px 40px;
   color: #ffffff;
-  max-width: 984px;
-  margin: 0 auto;
-  align-items: start;
 }
 
 .places__content-image {
@@ -46,11 +45,15 @@
 }
 
 .places__author-title {
-  font-weight: bold;
-  margin-bottom: 4px;
+  font-size: 12px;
+  color: gray;
+  letter-spacing: 3px;
 }
 
 .places__author-name {
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   margin: 0;
 }
 
