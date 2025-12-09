@@ -45,7 +45,11 @@
   margin: 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 768px) {
+  .intro {
+    margin: 70px auto;
+  }
+
   .intro__title {
     font-size: 45px;
     line-height: 49px;
@@ -63,7 +67,11 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
+  .intro {
+    margin: 50px auto;
+  }
+
   .intro__title {
     font-size: 32px;
     line-height: 36px;

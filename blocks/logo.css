@@ -6,15 +6,16 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .logo {
     padding: 24px 0 64px;
+    max-width: 250px;
   }
 }
 
-@media screen and (max-width: 580px) {
+@media (max-width: 580px) {
   .logo {
     padding: 16px 0 48px;
-    max-width: 240px;
+    max-width: 200px;
   }
 }

@@ -81,3 +81,45 @@
   transform: scale(1.05);
   box-shadow: 5px 5px 15px #00000060;
 }
+
+@media screen and (max-width: 1024px) {
+  .places__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 24px;
+  }
+
+  .places__content-title {
+    font-size: 48px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .places__content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .places__content-image {
+    grid-column: 1;
+    order: -1;
+  }
+
+  .places__content-text {
+    grid-column: 1;
+  }
+
+  .places__content-title {
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  .places__content-description {
+    font-size: 15px;
+  }
+
+  .places__content-button {
+    width: 100%;
+    font-size: 16px;
+  }
+}
